@@ -1,26 +1,20 @@
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
-import { Counter } from './Counter.jsx';
-import { List } from './List.jsx';
+import {MainLayout} from "./components/MainLayout";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+  // return (
+      // <MainLayout/>
+  // );
+  return <BrowserRouter>
+    <Routes>
+      <Route element={ <MainLayout/> }>
+        <Route path="/" element={<h2>Home</h2>}/>
+        <Route path="/brand" element={<h2>brand</h2>}/>
+        <Route path="/addbrand" element={<h2>addbrand</h2>}/>
 
-        <List />
-      </div>
-      <h1>Vite + React 222</h1>
-      <Counter />
-    </>
-  );
+      </Route>
+    </Routes>
+  </BrowserRouter>
 }
 
 export default App;
