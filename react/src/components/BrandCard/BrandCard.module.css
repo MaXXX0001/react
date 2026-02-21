@@ -1,0 +1,47 @@
+.card {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    user-select: none;
+    background-color: var(--card-bg-color);
+    color: var(--text-color);
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+
+    button {
+        align-self: flex-end;
+    }
+}
+
+.cardLabels {
+    display: flex;
+    gap: 10px;
+}
+
+.cardTitle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.cardModels {
+    margin-top: auto;
+}
+
+.cardModel {
+ font-size: 14px;
+ filter: blur(4px);
+ font-style: italic;
+ text-align: justify;
+ cursor: pointer;
+ transition: all .2s ease-in-out;
+}
+
+.cardModel:hover {
+    filter: none;
+}
