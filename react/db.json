@@ -1,0 +1,199 @@
+{
+  "react": [
+    {
+      "id": "1",
+      "brand": "Tesla",
+      "car": "Model S",
+      "otherCars": "Model 3, Model X, Model Y, Cybertruck",
+      "resources": [
+        "https://www.tesla.com/models",
+        "https://www.tesla.com"
+      ],
+      "country": "USA",
+      "isNormal": false,
+      "editDate": "03.02.2025, 19:49"
+    },
+    {
+      "id": "2",
+      "brand": "BMW",
+      "car": "3 Series",
+      "otherCars": "5 Series, 7 Series, X3, X5, i4",
+      "resources": [
+        "https://www.bmw.com",
+        "https://www.bmw.com/en/models/3-series/sedan/overview.html"
+      ],
+      "country": "Germany",
+      "isNormal": true,
+      "editDate": "03.02.2025, 20:25"
+    },
+    {
+      "id": "3",
+      "brand": "Mercedes-Benz",
+      "car": "C-Class",
+      "otherCars": "E-Class, S-Class, GLC, GLE, A-Class",
+      "resources": [
+        "https://www.mercedes-benz.com",
+        "https://www.mercedes-benz.com/en/vehicles/passenger-cars/c-class/"
+      ],
+      "country": "Germany",
+      "isNormal": true,
+      "editDate": "03.02.2025, 19:01"
+    },
+    {
+      "id": "4",
+      "brand": "Audi",
+      "car": "A4",
+      "otherCars": "A3, A6, Q3, Q5, e-tron",
+      "resources": [
+        "https://www.audi.com",
+        "https://www.audi.com/en/models/a4.html"
+      ],
+      "country": "Germany",
+      "isNormal": true,
+      "editDate": "21.02.2025, 20:26"
+    },
+    {
+      "id": "5",
+      "brand": "Toyota",
+      "car": "Corolla",
+      "otherCars": "Camry, RAV4, Yaris, Highlander",
+      "resources": [
+        "https://www.toyota-global.com",
+        "https://www.toyota.com/corolla/"
+      ],
+      "country": "Japan",
+      "isNormal": true,
+      "editDate": "03.02.2025, 19:49"
+    },
+    {
+      "id": "6",
+      "brand": "Honda",
+      "car": "Civic",
+      "otherCars": "Accord, CR-V, HR-V, Jazz",
+      "resources": [
+        "https://global.honda",
+        "https://automobiles.honda.com/civic-sedan"
+      ],
+      "country": "Japan",
+      "isNormal": true,
+      "editDate": "03.02.2025, 19:49"
+    },
+    {
+      "id": "7",
+      "brand": "Volkswagen",
+      "car": "Golf",
+      "otherCars": "Passat, Tiguan, Polo, ID.3",
+      "resources": [
+        "https://www.vw.com",
+        "https://www.volkswagen.de/en/models/golf.html"
+      ],
+      "country": "Germany",
+      "isNormal": true,
+      "editDate": "03.02.2025, 19:49"
+    },
+    {
+      "id": "8",
+      "brand": "Ford",
+      "car": "Focus",
+      "otherCars": "Fiesta, Mondeo, Kuga, Mustang",
+      "resources": [
+        "https://www.ford.com",
+        "https://www.ford.co.uk/cars/focus"
+      ],
+      "country": "USA",
+      "isNormal": true,
+      "editDate": "03.02.2025, 19:49"
+    },
+    {
+      "id": "9",
+      "brand": "Hyundai",
+      "car": "Elantra",
+      "otherCars": "i30, Tucson, Santa Fe, Kona",
+      "resources": [
+        "https://www.hyundai.com",
+        "https://www.hyundaiusa.com/us/en/vehicles/elantra"
+      ],
+      "country": "South Korea",
+      "isNormal": true,
+      "editDate": "03.02.2025, 19:49"
+    },
+    {
+      "id": "10",
+      "brand": "Kia",
+      "car": "Ceed",
+      "otherCars": "Sportage, Sorento, Rio, EV6",
+      "resources": [
+        "https://www.kia.com",
+        "https://www.kia.com/eu/models/ceed/"
+      ],
+      "country": "South Korea",
+      "isNormal": true,
+      "editDate": "03.02.2025, 19:49"
+    },
+    {
+      "id": "11",
+      "brand": "Nissan",
+      "car": "Qashqai",
+      "otherCars": "X-Trail, Micra, Leaf, Juke",
+      "resources": [
+        "https://www.nissan-global.com",
+        "https://www.nissan.co.uk/vehicles/new-vehicles/qashqai.html"
+      ],
+      "country": "Japan",
+      "isNormal": true,
+      "editDate": "03.02.2025, 19:49"
+    },
+    {
+      "id": "12",
+      "brand": "Mazda",
+      "car": "Mazda3",
+      "otherCars": "Mazda6, CX-3, CX-5, MX-5",
+      "resources": [
+        "https://www.mazda.com",
+        "https://www.mazdausa.com/vehicles/mazda3-sedan"
+      ],
+      "country": "Japan",
+      "isNormal": true,
+      "editDate": "03.02.2025, 19:49"
+    },
+    {
+      "id": "13",
+      "brand": "Subaru",
+      "car": "Impreza",
+      "otherCars": "Forester, Outback, Legacy, XV",
+      "resources": [
+        "https://www.subaru-global.com",
+        "https://www.subaru.com/vehicles/impreza/index.html"
+      ],
+      "country": "Japan",
+      "isNormal": true,
+      "editDate": "03.02.2025, 19:49"
+    },
+    {
+      "id": "14",
+      "brand": "Volvo",
+      "car": "XC60",
+      "otherCars": "XC40, XC90, S60, V60",
+      "resources": [
+        "https://www.volvocars.com",
+        "https://www.volvocars.com/intl/cars/xc60"
+      ],
+      "country": "Sweden",
+      "isNormal": true,
+      "editDate": "03.02.2025, 19:49"
+    },
+    {
+      "id": "15",
+      "brand": "Renault",
+      "car": "Megane",
+      "otherCars": "Clio, Captur, Arkana, Talisman",
+      "resources": [
+        "https://www.renault.com",
+        "https://www.renault.fr/vehicules-particuliers/megane.html"
+      ],
+      "country": "France",
+      "isNormal": true,
+      "editDate": "03.02.2025, 19:49"
+    }
+  ]
+}
