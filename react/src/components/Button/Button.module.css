@@ -1,7 +1,49 @@
 .btn {
-    background-color: darkmagenta;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: transparent;
+    cursor: pointer;
+    outline: none;
+    transition: all .2s ease-in-out;
+    user-select: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
 }
 
-.primary {
-    background-color: cadetblue;
+.btn:hover {
+    border-color: var(#2f2f2f);
+}
+
+.btn:active {
+    transform: scale(.98);
+}
+
+.btn:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.btn:focus,
+.btn:focus-visible {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .5);
+    border-color: transparent;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--btn-bg-color);
+}
+
+
+
+.active {
+    color: #000000;
+    background-color: #ce7e1d;
 }
