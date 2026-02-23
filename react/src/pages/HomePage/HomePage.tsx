@@ -1,4 +1,5 @@
 import { BrandCard } from '../../components/BrandCard/BrandCard'
+import { BrandCardList } from '../../components/BrandCardList/BrandCardList'
 import { useState, useEffect } from "react";
 import { API_URL } from '../../constants'
 
@@ -23,11 +24,7 @@ export const HomePage = () => {
 
     return (
         <>
-            {brands.map((card, index) => (
-                <BrandCard card={card} key={index} />
-            ))}
-
-            <button onClick={getBrands}>Get brands</button>
+            <BrandCardList cards={brands} />
         </>
     );
 
