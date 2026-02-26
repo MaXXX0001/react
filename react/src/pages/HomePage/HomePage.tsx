@@ -1,30 +1,40 @@
-import { BrandCard } from '../../components/BrandCard/BrandCard'
-import { BrandCardList } from '../../components/BrandCardList/BrandCardList'
-import { useState, useEffect } from "react";
+import {BrandCardList} from '../../components/BrandCardList/BrandCardList'
+import { Loader } from '../../components/Loader/Loader'
+import { useFetch } from '../../hooks/useFetch'
+import { useState, useEffect, useRef } from "react";
 import { API_URL } from '../../constants'
 
 export const HomePage = () => {
     const [brands, setBrands] = useState([]);
+    const [searchValue, setSearchValue] = useState("");
 
-    // @ts-ignore
-    const getBrands = async () => {
-        try {
-            const response = await fetch(`${API_URL}/brands`);
-            const brands = await response.json();
+    const inputRef = useRef(null);
 
-            setBrands(brands)
+    const [getBrands, isLoading, error] = useFetch(async (url) => {
+        const response = await fetch(`${API_URL}/${ url }`);
+        const brands = await response.json();
 
-            // brands.push(...data);
-        } catch (error) {}
-    };
+        setBrands(brands)
+
+        return brands;
+    });
 
     useEffect(() => {
-        getBrands()
+        // @ts-ignore
+        getBrands('brands')
     }, [])
+
+    const searchValuerHandler = (e) => {
+        setSearchValue(e.target.value)
+    }
 
     return (
         <>
-            <BrandCardList cards={brands} />
+            <input type="text" value={searchValue} onChange={searchValuerHandler} ref={inputRef}/>
+
+            { isLoading && <Loader/> }
+             {error && <p>{error}</p> }
+            <BrandCardList cards={ brands }/>
         </>
     );
 
